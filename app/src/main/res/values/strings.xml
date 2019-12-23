@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LenderR</string>
+    <string name="search_hint">Search</string>
+    <string name="no_results">found no results</string>
+    <string name="no_search_term">found no search terms</string>
+    <string name="no_network">found nothing</string>
+</resources>
