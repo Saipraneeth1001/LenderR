@@ -89,6 +89,7 @@ public class FetchBook extends AsyncTask<String,Void,String> {
         }
 
         // Return the raw response.
+        System.out.println(bookJSONString);
         return bookJSONString;
 
     }
@@ -112,6 +113,7 @@ public class FetchBook extends AsyncTask<String,Void,String> {
                 // Get the current item information.
                 JSONObject book = itemsArray.getJSONObject(i);
                 JSONObject volumeInfo = book.getJSONObject("volumeInfo");
+                System.out.println(volumeInfo);
 
                 // Try to get the author and title from the current item,
                 // catch if either field is empty and move on.

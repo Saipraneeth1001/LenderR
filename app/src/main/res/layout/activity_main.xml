@@ -29,25 +29,16 @@
         </com.miguelcatalan.materialsearchview.MaterialSearchView>
     </FrameLayout>
 
-    <TextView
-        android:id="@+id/titleView"
+    <Button
+        android:id="@+id/logoutButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="248dp"
-        android:text="Title"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="324dp"
+        android:layout_marginEnd="148dp"
+        android:text="Logout"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/authorView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="336dp"
-        android:text="Author"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
