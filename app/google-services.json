@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "148899103421",
+    "firebase_url": "https://lenderr-3ce19.firebaseio.com",
+    "project_id": "lenderr-3ce19",
+    "storage_bucket": "lenderr-3ce19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148899103421:android:89ecdec3a4d2b2ba74edd4",
+        "android_client_info": {
+          "package_name": "com.example.lenderr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "148899103421-chogg3j455gr2o3okujhdqvcj949e565.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaLKwSGKj8Ref6SorMSIVdyeCUqsM8pPY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "148899103421-chogg3j455gr2o3okujhdqvcj949e565.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
