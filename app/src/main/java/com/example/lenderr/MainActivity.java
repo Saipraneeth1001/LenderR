@@ -1,5 +1,6 @@
 package com.example.lenderr;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -13,6 +14,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
+
+import androidx.appcompat.widget.AppCompatImageView;
+
+import android.widget.ImageView;
 import android.widget.TextView;
 
 
@@ -30,12 +35,14 @@ public class MainActivity extends AppCompatActivity {
     String mBookInput;
     Button btnLogout;
     FirebaseAuth mFirebaseAuth;
+    ImageView notificationView;
     private FirebaseAuth.AuthStateListener mAuthStateListener;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btnLogout = findViewById(R.id.logoutButton);
+        notificationView = findViewById(R.id.notification);
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         searchView = (MaterialSearchView)findViewById(R.id.search_view);
@@ -80,10 +87,24 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu, menu);
 
         MenuItem item = menu.findItem(R.id.action_search);
+        MenuItem item2 = menu.findItem(R.id.notification);
         searchView.setMenuItem(item);
 
         return true;
     }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        if(item.getItemId() == R.id.notification){
+            Intent intent = new Intent(MainActivity.this,NotificationActivity.class);
+            startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item);
+
+
+    }
+
     public void searchBooks(View view) {
         // Get the search string from the input field.
         String queryString = mBookInput;
