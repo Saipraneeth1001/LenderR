@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".SignUpActivity">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/LoginToolbar"
         android:layout_width="match_parent"
@@ -31,7 +31,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.515" />
+        app:layout_constraintVertical_bias="0.502" />
 
     <EditText
         android:id="@+id/passwordText"
@@ -57,23 +57,24 @@
         android:layout_marginBottom="136dp"
         android:layout_marginEnd="163dp"
         android:layout_marginStart="163dp"
-        android:text="new user? Sign up here"
+        android:text="already have an account? Sign In here"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/loginButton"
+        android:id="@+id/signupButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="LogIn"
+        android:text="signup"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passwordText" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
